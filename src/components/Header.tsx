@@ -19,7 +19,7 @@ export default function Header() {
             <span className="sr-only">Your Company</span>
             
             <h3 style={{
-    fontFamily: "Nova Square"} } className=" text-3xl text-white font-bold">Event Essence</h3>
+    fontFamily: "Nova Square"} } className=" text-3xl text-white font-bold hover:text-blue-300">Event Essence</h3>
           </a>
         </div>
         <div className="flex lg:hidden">

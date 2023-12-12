@@ -40,9 +40,9 @@ function HomePage() {
         </div>
 
         {/* previous work section  */}
-          <div className=' flex flex-col lg:flex-row justify-center items-center'>
+          <div className=' flex flex-col lg:flex-row justify-center items-center min-h-screen'>
             <h3 className='text-6xl mb-10 text-blue-300  text-center' style={{ fontFamily: 'Nova square' }}>Previous Work</h3>
-            <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-20 '>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-20 '>
               {images.map((image)=>(
 
                   <img src={image} alt="" className=' w-80 mx-auto rounded-xl '  height={20}  />
@@ -54,57 +54,72 @@ function HomePage() {
 
 
           {/* contact section  */}
-          <div className=" flex items-center flex-col sm:flex-row md:justify-center mb-10">
+          <div className=" flex items-center flex-col md:flex-row md:justify-center min-h-screen" id="contact-section">
             <Lottie
               loop
               path='https://assets8.lottiefiles.com/packages/lf20_in4cufsz.json'
               play
               style={{ width: 450, height: 450 }}
             />
-            <div>
-              <h1 className=' text-8xl text-blue-300 mb-10' style={{ fontFamily: 'Nova square' }}>Contact Us</h1>
+            <div className=' md:ml-20'>
+              <h1 className=' md:text-8xl text-blue-300 mb-4 sm:text-4xl' style={{ fontFamily: 'Nova square' }}>Contact Us</h1>
 
-              <h3 className='text-4xl text-blue-300' style={{ fontFamily: 'Nova square' }}>name</h3>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                style={{
-                  fontSize: '16px', 
-                  borderRadius: '8px', 
-                  padding: '8px', 
-                  border: '1px solid #ccc', 
-                  width: '300px', 
-                }}
-              />
+              <div>
+                <h3 className='md:text-4xl sm:text-2xl text-blue-300' style={{ fontFamily: 'Nova square' }}>name</h3>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  style={{
+                    fontSize: '16px', 
+                    borderRadius: '8px', 
+                    padding: '8px', 
+                    border: '1px solid #ccc', 
+                    width: '300px', 
+                    height: '30px',
+                    marginBottom: '10px'
+                  }}
+                />
 
-              <h3 className='text-4xl text-blue-300' style={{ fontFamily: 'Nova square' }}>phone no</h3>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                style={{
-                  fontSize: '16px', 
-                  borderRadius: '8px', 
-                  padding: '8px', 
-                  border: '1px solid #ccc', 
-                  width: '300px', 
-                }}
-              />
+                <h3 className='md:text-4xl sm:text-2xl text-blue-300' style={{ fontFamily: 'Nova square' }}>phone no</h3>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  style={{
+                    fontSize: '16px', 
+                    borderRadius: '8px', 
+                    padding: '8px', 
+                    border: '1px solid #ccc', 
+                    width: '300px', 
+                    height: '30px',
+                    marginBottom: '10px'
+                  }}
+                />
 
-              <h3 className='text-4xl text-blue-300' style={{ fontFamily: 'Nova square' }}>query</h3>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                style={{
-                  fontSize: '16px', 
-                  borderRadius: '8px', 
-                  padding: '8px', 
-                  border: '1px solid #ccc', 
-                  width: '300px', 
-                }}
-              />
+                <h3 className='md:text-4xl sm:text-2xl text-blue-300' style={{ fontFamily: 'Nova square' }}>query</h3>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  style={{
+                    fontSize: '16px', 
+                    borderRadius: '8px', 
+                    padding: '8px', 
+                    border: '1px solid #ccc', 
+                    width: '300px', 
+                    height: '30px',
+                    marginBottom: '10px'
+                  }}
+                />
+                <div className='border-2 border-white rounded-xl p-2 hover:bg-gray-700 text-center  w-40 ml-16 mt-4 '>
+                <button className="text-white ">
+                  Send !
+                </button>
+              </div>
+
+              </div>
+              
             </div>
           </div>
 
