@@ -54,7 +54,7 @@ function HomePage() {
 
 
           {/* contact section  */}
-          <div className="h-screen flex items-center flex-col sm:flex-row md:justify-center">
+          <div className=" flex items-center flex-col sm:flex-row md:justify-center mb-10">
             <Lottie
               loop
               path='https://assets8.lottiefiles.com/packages/lf20_in4cufsz.json'
