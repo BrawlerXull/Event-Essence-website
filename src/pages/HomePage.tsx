@@ -1,7 +1,7 @@
 import { Typewriter } from 'react-simple-typewriter';
 import Layout from '../components/Layout';
 
-import * as LottiePlayer from "@lottiefiles/lottie-player";
+
 
 import Lottie from 'react-lottie-player';
 function HomePage() {
