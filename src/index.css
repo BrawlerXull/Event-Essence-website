@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000000;
+  background-image: url(http://www.transparenttextures.com/patterns/black-linen-2.png);
+}
