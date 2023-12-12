@@ -40,7 +40,7 @@ function HomePage() {
         </div>
 
         {/* previous work section  */}
-          <div className='h-screen flex sm:flex-col lg:flex-row justify-center items-center'>
+          <div className=' flex flex-col lg:flex-row justify-center items-center'>
             <h3 className='text-6xl mb-10 text-blue-300  text-center' style={{ fontFamily: 'Nova square' }}>Previous Work</h3>
             <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-20 '>
               {images.map((image)=>(
@@ -54,7 +54,7 @@ function HomePage() {
 
 
           {/* contact section  */}
-          <div className="h-screen flex items-center">
+          <div className="h-screen flex items-center flex-col sm:flex-row md:justify-center">
             <Lottie
               loop
               path='https://assets8.lottiefiles.com/packages/lf20_in4cufsz.json'
